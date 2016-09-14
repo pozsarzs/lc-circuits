@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LC-circuits
+Exec=lc-circuits
+Icon=lc-circuits.xpm
+Info=LC-circuits
+Comment=LC-circuit sizing application
+Comment[hu]=LC-áramkörök méretezése
+Type=Application
+Categories=Application;Electronics;
+Terminal=false
+StartupNotify=true
