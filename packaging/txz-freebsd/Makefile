@@ -1,12 +1,12 @@
 # $FreeBSD$
 
-PORTNAME=	electrontubes
+PORTNAME=	lc-circuits
 PORTVERSION=	0.4.1
 CATEGORIES=	science
 MASTER_SITES=	http://www.pozsarzs.hu/sources/
 
 MAINTAINER=	pozsarzs@gmail.com
-COMMENT=	Electrontube bias calculator
+COMMENT=	LC-circuit calculator application
 
 GNU_CONFIGURE=	yes
 

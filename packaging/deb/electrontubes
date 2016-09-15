@@ -1,2 +1,0 @@
-?package(electrontubes):needs="X11" section="Applications/Science/Electronics"\
-        title="Electrontubes" icon="/usr/share/pixmaps/electrontubes.xpm" command="/usr/bin/electrontubes"

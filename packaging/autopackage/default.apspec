@@ -1,70 +1,49 @@
 # +----------------------------------------------------------------------------+
-# | Electrontubes v0.4.1 * Electrontube bias calculator                        |
-# | Copyright (C) 2012-2016 Pozsar Zsolt <pozsarzs@gmail.com>                  |
+# | LC-circuits v0.4.1 * LC-circuit calculator                                 |
+# | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                  |
 # | default.apspec                                                             |
 # | apspec file for autopackage                                                |
 # +----------------------------------------------------------------------------+
 
 [Meta]
-RootName: @pozsarzs.hu/electrontubes:$SOFTWAREVERSION
-DisplayName: Electrontube bias calculator
-ShortName: electrontubes
+RootName: @pozsarzs.hu/lc-circuits:$SOFTWAREVERSION
+DisplayName: LC-circuit calculator
+ShortName: lc-circuits
 Maintainer: Pozsar Zsolt <pozsarzs@gmail.com>
 Packager: Pozsar Zsolt <pozsarzs@gmail.com>
-Summary: Electrontube bias calculator
+Summary: LC-circuit calculator
 URL: http://www.pozsarzs.hu/cheapapps/cheapapps_en.html
 License: EUPL v1.1
 SoftwareVersion: 0.4.1
-Repository: http://www.pozsarzs.hu/cheapapps/electrontubes.xml
+Repository: http://www.pozsarzs.hu/cheapapps/lc-circuits.xml
 AutopackageTarget: 1.0
 
 [BuildPrepare]
 # documents
 echo $build_root
-mkdir --parent $build_root/share/electrontubes/documents/hu
-cp $source_dir/documents/* $build_root/share/electrontubes/documents/
-cp $source_dir/documents/hu/* $build_root/share/electrontubes/documents/hu/
+mkdir --parent $build_root/share/lc-circuits/documents/hu
+cp $source_dir/documents/* $build_root/share/lc-circuits/documents/
+cp $source_dir/documents/hu/* $build_root/share/lc-circuits/documents/hu/
 # figures
-mkdir --parent $build_root/share/electrontubes/figures
-cp $source_dir/figures/* $build_root/share/electrontubes/figures/
+mkdir --parent $build_root/share/lc-circuits/figures
+cp $source_dir/figures/* $build_root/share/lc-circuits/figures/
 # help
-mkdir --parent $build_root/share/electrontubes/help/module_03
-mkdir --parent $build_root/share/electrontubes/help/module_04
-mkdir --parent $build_root/share/electrontubes/help/module_05
-mkdir --parent $build_root/share/electrontubes/help/module_06
-mkdir --parent $build_root/share/electrontubes/help/module_07
-mkdir --parent $build_root/share/electrontubes/help/module_09
-mkdir --parent $build_root/share/electrontubes/help/module_10
-mkdir --parent $build_root/share/electrontubes/help/module_14
-mkdir --parent $build_root/share/electrontubes/help/module_15
-cp $source_dir/help/*.html $build_root/share/electrontubes/help/
-cp $source_dir/help/*.css $build_root/share/electrontubes/help/
-cp $source_dir/help/module_03/* $build_root/share/electrontubes/help/module_03/
-cp $source_dir/help/module_04/* $build_root/share/electrontubes/help/module_04/
-cp $source_dir/help/module_05/* $build_root/share/electrontubes/help/module_05/
-cp $source_dir/help/module_06/* $build_root/share/electrontubes/help/module_06/
-cp $source_dir/help/module_07/* $build_root/share/electrontubes/help/module_07/
-cp $source_dir/help/module_09/* $build_root/share/electrontubes/help/module_09/
-cp $source_dir/help/module_10/* $build_root/share/electrontubes/help/module_10/
-cp $source_dir/help/module_11/* $build_root/share/electrontubes/help/module_11/
-cp $source_dir/help/module_12/* $build_root/share/electrontubes/help/module_12/
-cp $source_dir/help/module_13/* $build_root/share/electrontubes/help/module_13/
-cp $source_dir/help/module_14/* $build_root/share/electrontubes/help/module_14/
-cp $source_dir/help/module_15/* $build_root/share/electrontubes/help/module_15/
+cp $source_dir/help/*.html $build_root/share/lc-circuits/help/
+cp $source_dir/help/*.css $build_root/share/lc-circuits/help/
 # locales
-mkdir --parent $build_root/share/electrontubes/languages/hu
-cp $source_dir/languages/* $build_root/share/electrontubes/languages/
-cp $source_dir/languages/hu/* $build_root/share/electrontubes/languages/hu/
+mkdir --parent $build_root/share/lc-circuits/languages/hu
+cp $source_dir/languages/* $build_root/share/lc-circuits/languages/
+cp $source_dir/languages/hu/* $build_root/share/lc-circuits/languages/hu/
 # manuals
-mkdir --parent $build_root/share/electrontubes/manual
-cp $source_dir/manual/* $build_root/share/electrontubes/manual/
+mkdir --parent $build_root/share/lc-circuits/manual
+cp $source_dir/manual/* $build_root/share/lc-circuits/manual/
 # other files
-cp $source_dir/electrontubes $build_root/share/electrontubes/
-cp $source_dir/README $build_root/share/electrontubes/README
+cp $source_dir/lc-circuits $build_root/share/lc-circuits/
+cp $source_dir/README $build_root/share/lc-circuits/README
 mkdir --parent $build_root/share/application/
-cp $source_dir/electrontubes.desktop $build_root/share/application/
+cp $source_dir/lc-circuits.desktop $build_root/share/application/
 mkdir --parent $build_root/share/pixmaps/
-cp $source_dir/electrontubes.xpm $build_root/share/pixmaps/
+cp $source_dir/lc-circuits.xpm $build_root/share/pixmaps/
 
 [BuildUnprepare]
 unprepareBuild
@@ -77,13 +56,13 @@ echo 'share/' | import
 require @xfree86.org/xlib 6.0
 
 [Install]
-installData share/electrontubes
+installData share/lc-circuits
 outputStatus "$intl_INSTALLING_EXE"
-linkFile --silent $PREFIX/share/electrontubes/electrontubes $PREFIX/bin/electrontubes
-linkFile --silent $PREFIX/share/electrontubes/manual/electrontubes_en.1 $PREFIX/share/man/man1/electrontubes.1
-linkFile --silent $PREFIX/share/electrontubes/manual/electrontubes_hu.1 $PREFIX/share/man/hu/man1/electrontubes.1
-installDesktop "Application/Electronics" share/application/electrontubes.desktop
-installIcon share/pixmaps/electrontubes.xpm
+linkFile --silent $PREFIX/share/lc-circuits/lc-circuits $PREFIX/bin/lc-circuits
+linkFile --silent $PREFIX/share/lc-circuits/manual/lc-circuits_en.1 $PREFIX/share/man/man1/lc-circuits.1
+linkFile --silent $PREFIX/share/lc-circuits/manual/lc-circuits_hu.1 $PREFIX/share/man/hu/man1/lc-circuits.1
+installDesktop "Application/Electronics" share/application/lc-circuits.desktop
+installIcon share/pixmaps/lc-circuits.xpm
 
 [Uninstall]
 # Usually just the following line is enough to uninstall everything
