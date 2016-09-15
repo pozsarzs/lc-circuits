@@ -1,16 +1,14 @@
 # +----------------------------------------------------------------------------+
 # | LC-circuits v0.4.1 * LC-circuit calculator                                 |
 # | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                  |
-# | Electrontubes v0.4.1 * Electrontube bias calculator                        |
-# | Copyright (C) 2012-2016 Pozsar Zsolt <pozsarzs@gmail.com>                  |
 # | Makefile                                                                   |
 # | Make file for FreePascal source.                                           |
 # +----------------------------------------------------------------------------+
 
 include ../Makefile.global
 
-srcfiles = electrontubes.lpr
-binfiles = electrontubes
+srcfiles = lc-circuits.lpr
+binfiles = lc-circuits
 
 all:
 	@echo "- Compiling source code..."

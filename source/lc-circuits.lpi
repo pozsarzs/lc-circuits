@@ -8,7 +8,7 @@
         <SaveOnlyProjectUnits Value="True"/>
       </Flags>
       <MainUnit Value="0"/>
-      <Title Value="Electrontubes"/>
+      <Title Value="LC-circuits"/>
       <UseAppBundle Value="False"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
@@ -58,7 +58,7 @@
     </RequiredPackages>
     <Units Count="19">
       <Unit0>
-        <Filename Value="electrontubes.lpr"/>
+        <Filename Value="lc-circuits.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>

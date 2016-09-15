@@ -1,12 +1,12 @@
 { +--------------------------------------------------------------------------+ }
-{ | Electrontubes v0.4.1 * Electrontube bias calculator                      | }
-{ | Copyright (C) 2012-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
+{ | LC-circuits v0.4.1 * LC-circuit calculator                               | }
+{ | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
 { | commonproc.pp                                                            | }
 { | Common procedures and functions                                          | }
 { +--------------------------------------------------------------------------+ }
 
 {
-  Copyright (C) 2012-2016 Pozsar Zsolt
+  Copyright (C) 2011-2016 Pozsar Zsolt
 
   This program is free software: you can redistribute it and/or modify
 it under the terms of the European Union Public License version 1.1.
@@ -37,7 +37,7 @@ var
   savehistory: boolean;                                     // save load history
   appmode: byte;                                               // operation mode
 const
-  APPNAME='electrontubes';
+  APPNAME='lc-circuits';
   EMAIL='pozsarzs@gmail.com';
   HOMEPAGE='http://www.pozsarzs.hu';
   VERSION='0.4.1';
