@@ -4,20 +4,34 @@
 
 1. Általános információk
 ~~~~~~~~~~~~~~~~~~~~~~~~
-  Ez egy elektroncsöves áramkör méretező alkalmazás.
+  Ez egy LC-áramkör méretező alkalmazás.
   Számítások: 
-  - AC csatolt katódkövető triódával
-  - Áramstabilizált fűtőáramkör baréterrel (Fe-H ellenállás)
-  - Feszültség stabilizátor gáztöltésű stabilizátorcsővel
-  - Földelt katódú erősítő trióda kaszkáddal 1.
-  - Földelt katódú erősítő trióda kaszkáddal 2.
-  - Földelt katódú erősítő triódával
-  - Földelt katódú erősítő triódával és negatív visszacsatolással
-  - Földelt katódú erősítő triódával (kondenzátorral álthidalt katódellenállással)
-  - Katodin fázisfordító 1.
-  - Katodin fázisfordító 2.
-  - Mű-követő erősítő triódákkal
-  - SRPP erősítő triódával
+  - Aszimmetrikus aluláteresztő L szűrő
+  - Aszimmetrikus aluláteresztő Pi szűrő
+  - Aszimmetrikus aluláteresztő T szűrő
+  - Aszimmetrikus felüláteresztő L szűrő
+  - Aszimmetrikus felüláteresztő Pi szűrő
+  - Aszimmetrikus felüláteresztő T szűrő
+  - Aszimmetrikus sáváteresztő L szűrő
+  - Aszimmetrikus sáváteresztő  Pi szűrő
+  - Aszimmetrikus sáváteresztő T szűrő
+  - Aszimmetrikus sávzáró L szűrő
+  - Aszimmetrikus sávzáró Pi szűrő
+  - Aszimmetrikus sávzáró T szűrő
+  - Collins-szűrő
+  - Kétutas keresztváltó szűrő 1.
+  - Kétutas keresztváltó szűrő 2.
+  - Kétutas keresztváltó szűrő 3.
+  - Kétutas keresztváltó szűrő 4.
+  - Kétutas keresztváltó szűrő 5.
+  - Kétutas keresztváltó szűrő 6.
+  - Seefried impedancia átalakító
+  - Szimmetrikus aluláteresztő Pi szűrő
+  - Szimmetrikus aluláteresztő T szűrő
+  - Szimmetrikus felüláteresztő Pi szűrő
+  - Szimmetrikus felüláteresztő T szűrő
+  - Szimmetrikus sáváteresztő T szűrő
+  - Szimmetrikus sávzáró T szűrő
 
    Ez egy olyan szoftver, amely önnek nem kerül pénzbe (esetleg az internet
 használatáért kell fizetnie). Ennek egyedüli feltétele az European Union Public
@@ -29,24 +43,24 @@ Licence elfogadása és betartása.
 2. Telepítő csomagok
 ~~~~~~~~~~~~~~~~~~~~
 a. FreeBSD
-   electrontubes-0.4.1-FreeBSD-Port.shar   port csomag
-   electrontubes-0.4.1.txz                 bináris csomag
+   lc-circuits-0.4.1-FreeBSD-Port.shar   port csomag
+   lc-circuits-0.4.1.txz                 bináris csomag
 
 b. Linux
-   electrontubes-0.4.1-1.i586.rpm          bináris csomag
-   electrontubes-0.4.1-i586-1.txz          bináris csomag
-   electrontubes-0.4.1-i586.bin            telepítő program
-   electrontubes-0.4.1-i586.tar.gz         bináris csomag
-   electrontubes-0.4.1.x86.package         bináris csomag
-   electrontubes_0.4.1-1_i386.deb          bináris csomag
+   lc-circuits-0.4.1-1.i586.rpm          bináris csomag
+   lc-circuits-0.4.1-i586-1.txz          bináris csomag
+   lc-circuits-0.4.1-i586.bin            telepítő program
+   lc-circuits-0.4.1-i586.tar.gz         bináris csomag
+   lc-circuits-0.4.1.x86.package         bináris csomag
+   lc-circuits_0.4.1-1_i386.deb          bináris csomag
 
 c. Windows
-   electrontubes-0.4.1-win32.exe           telepítő alkalmazás
-   electrontubes-0.4.1-win32.msi           bináris csomag
-   electrontubes-0.4.1-win32.zip           bináris csomag
+   lc-circuits-0.4.1-win32.exe           telepítő alkalmazás
+   lc-circuits-0.4.1-win32.msi           bináris csomag
+   lc-circuits-0.4.1-win32.zip           bináris csomag
 
 d. forrűskód
-   electrontubes-0.4.1.tar.gz              forrásnyelvű csomag
+   lc-circuits-0.4.1.tar.gz              forrásnyelvű csomag
 
 3. Beállítások
 ~~~~~~~~~~~~~~
@@ -55,7 +69,7 @@ használatával állíthatja be az alkalmazás nyelvét. (angol: en_US, magyar h
 
 4. Fontos információk
 ~~~~~~~~~~~~~~~~~~~~~
-   Copyright (C) 2012-2016 Pozsár Zsolt
+   Copyright (C) 2011-2016 Pozsár Zsolt
 
    Ez a program szabad szoftver; terjeszthetõ és/vagy módosítható az European
 Union Public License 1.1 verziója alapján.
