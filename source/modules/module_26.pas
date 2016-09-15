@@ -1,10 +1,19 @@
 { +--------------------------------------------------------------------------+ }
-{ | LC-circuits v0.1.1 * LC-circuits                    [ CheapApps series ] | }
-{ | Copyright (C) 2011 Pozsar Zsolt <pozsarzs@gmail.com>                     | }
+{ | LC-circuits v0.4.1 * LC-circuit calculator                               | }
+{ | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
 { | module_26.pas                                                            | }
 { | Module                                                                   | }
 { +--------------------------------------------------------------------------+ }
-{ ************  This file is not public, contents trade secret! ************** }
+
+{
+  Copyright (C) 2011-2016 Pozsar Zsolt
+
+  This program is free software: you can redistribute it and/or modify
+it under the terms of the European Union Public License version 1.1.
+
+  This program is distributed WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+}
 
 unit module_26;
 {$MODE OBJFPC}{$H+}
