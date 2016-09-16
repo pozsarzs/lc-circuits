@@ -1,7 +1,7 @@
 { +--------------------------------------------------------------------------+ }
 { | LC-circuits v0.4.1 * LC-circuits                                         | }
 { | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
-{ | module_01.pas                                                            | }
+{ | module_12.pas                                                            | }
 { | Module (static, fp unit - v0.3+)                                         | }
 { +--------------------------------------------------------------------------+ }
 
@@ -15,7 +15,7 @@ it under the terms of the European Union Public License version 1.1.
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 }
 
-unit module_01;
+unit module_12;
 {$MODE OBJFPC}{$H+}
 interface
 var
@@ -30,17 +30,7 @@ var
   ErrorMessages: array[0..15] of string;                       // Error messages
   HowToSetLinkActive: boolean;            //Enable/disable "How to set it?" link
 const
-  MODULE_ID='lc01';                                                 // Module ID
-
-unit module_12;
-{$MODE OBJFPC}{$H+}
-interface
-var
-  ValueDataIn: array[0..7] of real;
-  ValueDataOut: array[0..7] of real;
-  NameDataIn: array[0..7] of string;
-  NameDataOut: array[0..7] of string;
-  NameModule: string;
+  MODULE_ID='lc12';                                                 // Module ID
 
 Resourcestring
   MESSAGE01='Symmetric low pass T-section filter';
@@ -48,7 +38,7 @@ Resourcestring
   MESSAGE03='Z|Ω|impedance';
   MESSAGE04='C|nF|capacitor';
   MESSAGE05='L|µH|inductor';
-  MESSAGE09='Calculation error, please check values!';
+  MESSAGE06='Calculation error, please check values!';
 
 function GetName: string;
 function GetID: string;
@@ -98,5 +88,5 @@ initialization
   NameDataIn[1]:=MESSAGE03;
   NameDataOut[0]:=MESSAGE04;
   NameDataOut[1]:=MESSAGE05;
-  ErrorMessages[0]:=MESSAGE09;
+  ErrorMessages[0]:=MESSAGE06;
 end.

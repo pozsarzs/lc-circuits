@@ -21,7 +21,9 @@ uses
   Dialogs, Interfaces, Forms, SysUtils,
  {$IFDEF UseFHS} unttranslator, {$ELSE} DefaultTranslator,{$ENDIF}
   Printer4Lazarus, crt, frmmain, frmabout, frmactivehelp, frmpref,
-  untcommonproc;
+  untcommonproc, module_11, module_12, module_13, module_16, module_17,
+  module_18, module_19, module_20, module_21, module_22, module_23, module_24,
+  module_25, module_26;
 var
   b: byte;
   fn: string;
@@ -103,7 +105,7 @@ begin
     10: help(false);
     20: verinfo;
   end;
-  Application.Title:='Electrontubes';
+  Application.Title:='LC-circuits';
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);

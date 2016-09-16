@@ -321,8 +321,8 @@ object Form2: TForm2
     Left = 8
     Height = 19
     Top = 8
-    Width = 140
-    Caption = 'Electrontubes v'
+    Width = 110
+    Caption = 'LC-circuits v'
     Font.Height = -16
     Font.Name = 'Sans'
     Font.Style = [fsBold]
@@ -378,7 +378,7 @@ object Form2: TForm2
     Height = 11
     Top = 40
     Width = 184
-    Caption = 'Copyright (C) 2012-2016 Pozsár Zsolt'
+    Caption = 'Copyright (C) 2011-2016 Pozsár Zsolt'
     ParentColor = False
   end
   object Button1: TButton

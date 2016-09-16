@@ -1,7 +1,7 @@
 { +--------------------------------------------------------------------------+ }
 { | LC-circuits v0.4.1 * LC-circuits                                         | }
 { | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
-{ | module_01.pas                                                            | }
+{ | module_23.pas                                                            | }
 { | Module (static, fp unit - v0.3+)                                         | }
 { +--------------------------------------------------------------------------+ }
 
@@ -15,7 +15,7 @@ it under the terms of the European Union Public License version 1.1.
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 }
 
-unit module_01;
+unit module_23;
 {$MODE OBJFPC}{$H+}
 interface
 var
@@ -30,20 +30,8 @@ var
   ErrorMessages: array[0..15] of string;                       // Error messages
   HowToSetLinkActive: boolean;            //Enable/disable "How to set it?" link
 const
-  MODULE_ID='lc01';                                                 // Module ID
+  MODULE_ID='lc23';                                                 // Module ID
 
-unit module_23;
-{$MODE OBJFPC}{$H+}
-interface
-var
-  ValueDataIn: array[0..7] of real;
-  ValueDataOut: array[0..7] of real;
-  NameDataIn: array[0..7] of string;
-  NameDataOut: array[0..7] of string;
-  NameModule: string;
-
-Resourcestring
-  MESSAGE01='Asymmetric band stop L-section filter';
   MESSAGE02='fmin|kHz|lower cutoff frequency';
   MESSAGE03='fmax|kHz|upper cutoff frequency';
   MESSAGE04='Z|Ω|impedance';

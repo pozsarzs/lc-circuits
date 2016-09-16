@@ -4,7 +4,7 @@ object Form1: TForm1
   Top = 118
   Width = 689
   ActiveControl = Panel3
-  Caption = 'Electrontubes'
+  Caption = 'LC-circuits'
   ClientHeight = 447
   ClientWidth = 689
   Constraints.MinHeight = 457

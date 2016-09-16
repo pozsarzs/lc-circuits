@@ -19,11 +19,18 @@ unit module_26;
 {$MODE OBJFPC}{$H+}
 interface
 var
-  ValueDataIn: array[0..7] of real;
-  ValueDataOut: array[0..7] of real;
-  NameDataIn: array[0..7] of string;
-  NameDataOut: array[0..7] of string;
-  NameModule: string;
+  NameModule: string;                                          // Name of module
+  ValueActiveElements: array[0..15] of real;    // Parameters of active elements
+  ValueDataIn: array[0..15] of real;                           // Initial values
+  ValueDataOut: array[0..15] of real;                           // Result values
+  NameActiveElements: array[0..15] of string;           // Description of values
+  NameDataIn: array[0..15] of string;                   // Description of values
+  NameDataOut: array[0..15] of string;                  // Description of values
+  ErrorCode: byte;                                          // Actual error code
+  ErrorMessages: array[0..15] of string;                       // Error messages
+  HowToSetLinkActive: boolean;            //Enable/disable "How to set it?" link
+const
+  MODULE_ID='lc26';                                                 // Module ID
 
 Resourcestring
   MESSAGE01='Symmetric band stop T-section filter';
