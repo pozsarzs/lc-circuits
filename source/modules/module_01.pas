@@ -1,12 +1,12 @@
 { +--------------------------------------------------------------------------+ }
 { | LC-circuits v0.4.1 * LC-circuits                                         | }
-{ | Copyright (C) 2012-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
+{ | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
 { | module_01.pas                                                            | }
 { | Module (static, fp unit - v0.3+)                                         | }
 { +--------------------------------------------------------------------------+ }
 
 {
-  Copyright (C) 2012-2016 Pozsar Zsolt
+  Copyright (C) 2011-2016 Pozsar Zsolt
 
   This program is free software: you can redistribute it and/or modify
 it under the terms of the European Union Public License version 1.1.
@@ -30,7 +30,7 @@ var
   ErrorMessages: array[0..15] of string;                       // Error messages
   HowToSetLinkActive: boolean;            //Enable/disable "How to set it?" link
 const
-  MODULE_ID='lc01';                                                  // Module ID
+  MODULE_ID='lc01';                                                 // Module ID
 
 Resourcestring
   // Module name
@@ -59,7 +59,7 @@ function GetErrorCode: byte;
 function GetHowToSetLinkActive: boolean;
 function Calculate: byte;
 
-Implementation
+implementation
 
 // Calculation
 function Calculate: byte;

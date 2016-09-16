@@ -1,10 +1,36 @@
 { +--------------------------------------------------------------------------+ }
-{ | LC-circuits v0.1.1 * LC-circuits                    [ CheapApps series ] | }
-{ | Copyright (C) 2011 Pozsar Zsolt <pozsarzs@gmail.com>                     | }
-{ | module_13.pas                                                            | }
-{ | Module                                                                   | }
+{ | LC-circuits v0.4.1 * LC-circuits                                         | }
+{ | Copyright (C) 2011-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
+{ | module_01.pas                                                            | }
+{ | Module (static, fp unit - v0.3+)                                         | }
 { +--------------------------------------------------------------------------+ }
-{ ************  This file is not public, contents trade secret! ************** }
+
+{
+  Copyright (C) 2011-2016 Pozsar Zsolt
+
+  This program is free software: you can redistribute it and/or modify
+it under the terms of the European Union Public License version 1.1.
+
+  This program is distributed WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+}
+
+unit module_01;
+{$MODE OBJFPC}{$H+}
+interface
+var
+  NameModule: string;                                          // Name of module
+  ValueActiveElements: array[0..15] of real;    // Parameters of active elements
+  ValueDataIn: array[0..15] of real;                           // Initial values
+  ValueDataOut: array[0..15] of real;                           // Result values
+  NameActiveElements: array[0..15] of string;           // Description of values
+  NameDataIn: array[0..15] of string;                   // Description of values
+  NameDataOut: array[0..15] of string;                  // Description of values
+  ErrorCode: byte;                                          // Actual error code
+  ErrorMessages: array[0..15] of string;                       // Error messages
+  HowToSetLinkActive: boolean;            //Enable/disable "How to set it?" link
+const
+  MODULE_ID='lc01';                                                 // Module ID
 
 unit module_13;
 {$MODE OBJFPC}{$H+}
@@ -22,19 +48,25 @@ Resourcestring
   MESSAGE03='Z|Ω|impedance';
   MESSAGE04='C|nF|capacitor';
   MESSAGE05='L|µH|inductor';
+  MESSAGE09='Calculation error, please check values!';
 
-function Calculate: boolean;
 function GetName: string;
+function GetID: string;
+procedure SetActiveElements(num: byte; value: real);
+procedure SetDataIn(num: byte; value: real);
+function GetDataOut(num: byte): real;
+function GetNameActiveElements(num: byte): string;
 function GetNameDataIn(num: byte): string;
 function GetNameDataOut(num: byte): string;
-function GetDataOut(num: byte): real;
-procedure SetDataIn(num: byte; value: real);
+function GetErrorMessage(num: byte): string;
+function GetErrorCode: byte;
+function GetHowToSetLinkActive: boolean;
+function Calculate: byte;
 
-Implementation
+implementation
 
-// 'main' function
-function Calculate: boolean; 
-var
+// Calculation
+function Calculate: byte;var
   z, f, c, l: real;
 begin
   try
@@ -49,18 +81,22 @@ begin
   except
     ValueDataOut[0]:=0;
     ValueDataOut[1]:=0;
-    calculate:=false;
+    ErrorCode:=1;
+    Result:=ErrorCode;
     exit;
   end;
-  calculate:=true;
+  ErrorCode:=0;
+  Result:=ErrorCode;
 end;
 
 {$I module_commonproc.inc}
 
 initialization
-  NameModule:=MESSAGE01;
+  ErrorCode:=0;
+  HowToSetLinkActive:=false;
   NameDataIn[0]:=MESSAGE02;
   NameDataIn[1]:=MESSAGE03;
   NameDataOut[0]:=MESSAGE04;
   NameDataOut[1]:=MESSAGE05;
+  ErrorMessages[0]:=MESSAGE09;
 end.
