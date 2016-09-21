@@ -934,6 +934,10 @@ msgstr "Sú&gó"
 msgid "Hi&nt"
 msgstr "Sú&gó"
 
+#: tform1.label1.caption
+msgid "How can I set them?"
+msgstr "Hogyan állítsam ezt be?"
+
 #: TFORM1.LABEL2.CAPTION
 msgid "Calculated values"
 msgstr "Számított értékek"
@@ -950,17 +954,9 @@ msgstr "&Fájl"
 msgid "&Configuration"
 msgstr "&Konfiguráció"
 
-#: TFORM1.MENUITEM11.CAPTION
-msgid "-"
-msgstr "-"
-
 #: TFORM1.MENUITEM12.CAPTION
 msgid "Se&ttings.."
 msgstr "&Beállítások"
-
-#: TFORM1.MENUITEM13.CAPTION
-msgid "&Set serial number.."
-msgstr "Sorozatszám beállítás..."
 
 #: TFORM1.MENUITEM14.CAPTION
 msgid "&Save to file.."
@@ -990,14 +986,6 @@ msgstr "Beállítások menté&se"
 msgid "&Index"
 msgstr "&Tartalom mutató"
 
-#: TFORM1.MENUITEM3.CAPTION
-msgid "&On-line registration"
-msgstr "On-line &regisztráció"
-
-#: TFORM1.MENUITEM4.CAPTION
-msgid "-"
-msgstr "-"
-
 #: TFORM1.MENUITEM5.CAPTION
 msgid "&Help"
 msgstr "&Súgó"
@@ -1009,10 +997,6 @@ msgstr "&Névjegy"
 #: TFORM1.MENUITEM7.CAPTION
 msgid "On-line &bugreport"
 msgstr "On-line hi&bajelentés"
-
-#: TFORM1.MENUITEM8.CAPTION
-msgid "-"
-msgstr "-"
 
 #: TFORM1.MENUITEM9.CAPTION
 msgid "&Quit"
@@ -1052,63 +1036,23 @@ msgstr "Névjegy"
 
 #: TFORM2.LABEL1.CAPTION
 msgid "LC-circuits v"
-msgstr "LC-áramkörök v"
+msgstr "LC-circuits v"
 
 #: TFORM2.LABEL11.CAPTION
-msgid "Copyright (C) 2011 Pozsár Zsolt"
-msgstr "Copyright (C) 2010 Pozsár Zsolt"
-
-#: TFORM2.LABEL2.CAPTION
-msgid "CheapApps series"
-msgstr "CheapApps sorozat"
+msgid "Copyright (C) 2011-2016 Pozsár Zsolt"
+msgstr "Copyright (C) 2011-2016 Pozsár Zsolt"
 
 #: TFORM2.LABEL3.CAPTION
 msgid "Homepage:"
 msgstr "Honlap:"
 
-#: TFORM2.LABEL4.CAPTION
-msgid "http://www.cheapapps-series.info"
-msgstr "http://www.cheapapps-series.info"
-
-#: TFORM2.LABEL5.CAPTION
-msgid "pozsarzs@gmail.com"
-msgstr "pozsarzs@gmail.com"
-
 #: TFORM2.LABEL6.CAPTION
 msgid "E-mail:"
 msgstr "E-mail:"
 
-#: TFORM2.LABEL7.CAPTION
-msgid "Name:"
-msgstr "Név:"
-
-#: TFORM2.LABEL9.CAPTION
-msgid "Serial:"
-msgstr "Sorozatszám:"
-
-#: TFORM3.BUTTON1.CAPTION
-msgid "&Set"
-msgstr "&Beállít"
-
-#: TFORM3.BUTTON3.CAPTION
-msgid "&Cancel"
-msgstr "&Mégsem"
-
-#: TFORM3.FORM3.CAPTION
-msgid "Set serial"
-msgstr "Sorozatszám beállítás"
-
-#: TFORM3.LABEL1.CAPTION
-msgid "Your serial number:"
-msgstr "Az Ön sorozatszáma:"
-
-#: TFORM3.STATICTEXT2.CAPTION
-msgid "-"
-msgstr "-"
-
-#: TFORM3.STATICTEXT3.CAPTION
-msgid "-"
-msgstr "-"
+#: tform2.label7.caption
+msgid "Licence: EUPL v1.1"
+msgstr "Licenc: EUPL v1.1"
 
 #: TFORM4.BUTTON1.CAPTION
 msgid "&Set"
@@ -1121,14 +1065,6 @@ msgstr "&Mégsem"
 #: TFORM4.BUTTON3.CAPTION
 msgid "&Default"
 msgstr "&Alap"
-
-#: TFORM4.BUTTON4.CAPTION
-msgid "..."
-msgstr "..."
-
-#: TFORM4.BUTTON5.CAPTION
-msgid "..."
-msgstr "..."
 
 #: TFORM4.CHECKBOX1.CAPTION
 msgid "Offline mode"
@@ -1146,27 +1082,47 @@ msgstr "Böngésző alkalmazás:"
 msgid "Mailer application:"
 msgstr "Levelező alkalmazás:"
 
-#: commonproc.message01
+#: TFORM5.BUTTON1.CAPTION
+msgid "&Close"
+msgstr "Be&zárás"
+
+#: TFORM5.BUTTON2.CAPTION
+msgid "&Previous"
+msgstr "&Előző"
+
+#: TFORM5.BUTTON3.CAPTION
+msgid "&Next"
+msgstr "&Következő"
+
+#: TFORM5.CAPTION
+msgid "How can I set them?"
+msgstr "Hogyan állítsam ezt be?"
+
+#: tform5.label1.caption
+msgid "(Title)"
+msgstr "(Cím)"
+
+#: untcommonproc.message01
 msgid "Cannot read the users's configuration file!"
 msgstr "A felhasználó beállítása nem olvasható!"
 
-#: commonproc.message02
+#: untcommonproc.message02
 msgid "Cannot write the user's configuration file!"
 msgstr "A felhasználó beállítása nem menthető!"
 
-#: commonproc.message03
+#: untcommonproc.message03
 msgid "Please check browser application setting!"
 msgstr "Ellenőrizze a megadott böngésző alkalmazást!"
 
-#: commonproc.message04
+#: untcommonproc.message04
 msgid "Please check mailer application setting!"
 msgstr "Ellenőrizze a megadott levelező alkalmazást!"
 
-#: commonproc.message05
+#: untcommonproc.message05
 msgid "Missing files! Please reinstall application!"
 msgstr "Hiányzó fájlok! Telepítse újra a programot."
 
-#: commonproc.message07
+#: untcommonproc.message07
 msgid "Cannot write temporary file!"
 msgstr "Ideiglenes állomány nem hozható létre!"
 
