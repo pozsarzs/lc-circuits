@@ -32,6 +32,8 @@ var
 const
   MODULE_ID='lc23';                                                 // Module ID
 
+Resourcestring
+  MESSAGE01='Asymmetric band stop L-section filter';
   MESSAGE02='fmin|kHz|lower cutoff frequency';
   MESSAGE03='fmax|kHz|upper cutoff frequency';
   MESSAGE04='Z|Ω|impedance';
