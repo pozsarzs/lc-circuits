@@ -17,11 +17,9 @@ LC-circuit calculator application
 /usr/share/doc/lc-circuits/AUTHORS
 /usr/share/doc/lc-circuits/COPYING
 /usr/share/doc/lc-circuits/ChangeLog
-/usr/share/doc/lc-circuits/INSTALL
 /usr/share/doc/lc-circuits/README
 /usr/share/doc/lc-circuits/VERSION
 /usr/share/doc/lc-circuits/hu/COPYING
-/usr/share/doc/lc-circuits/hu/INSTALL
 /usr/share/doc/lc-circuits/hu/README
 /usr/share/lc-circuits/figures/module_01.png
 /usr/share/lc-circuits/figures/module_02.png
