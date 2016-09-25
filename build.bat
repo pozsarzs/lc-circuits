@@ -8,7 +8,7 @@ rem ----------------------------------------------------------------------------
 
 set PPC=c:\lazarus\fpc\2.6.4\bin\i386-win32\ppc386.exe
 set LAZ=c:\lazarus\
-set NAME=Electrontubes
+set NAME=LC-circuits
 set /p VERSION=<documents\VERSION
 set OS=win32
 set ARCH=i386
@@ -96,7 +96,7 @@ copy /y help\*.html %INSTDIR%\help\
 copy /y help\*.css %INSTDIR%\help\
 copy /y README*.* %INSTDIR%\
 copy /y source\lib\%ARCH%-%OS%\*.exe %INSTDIR%\
-config\mkshortcut.vbs /target:%INSTDIR%\%NAME%.exe /shortcut:%USERPROFILE%\desktop\Electrontubes
+config\mkshortcut.vbs /target:%INSTDIR%\%NAME%.exe /shortcut:%USERPROFILE%\desktop\LC-circuits
 echo.
 echo Run 'build.bat uninstall' if you remove this application.
 goto end
@@ -109,7 +109,7 @@ echo Check application's folder: %INSTDIR%
 if not exist "%INSTDIR%" ( echo Error: bad folder name in install.log file, cannot uninstall application! & goto end )
 echo Removing application...
 rd /s %INSTDIR%
-del /q %USERPROFILE%\desktop\Electrontubes.lnk
+del /q %USERPROFILE%\desktop\LC-circuits.lnk
 goto end
 
 :end
