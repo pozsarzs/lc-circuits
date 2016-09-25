@@ -84,6 +84,7 @@ end;
 initialization
   ErrorCode:=0;
   HowToSetLinkActive:=false;
+  NameModule:=MESSAGE01;
   NameDataIn[0]:=MESSAGE02;
   NameDataIn[1]:=MESSAGE03;
   NameDataOut[0]:=MESSAGE04;

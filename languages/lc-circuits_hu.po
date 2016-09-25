@@ -268,7 +268,7 @@ msgstr "L1|µH|tekercs"
 
 #: module_05.message06
 msgid "L2|µH|inductor"
-msgstr "L1|µH|tekercs"
+msgstr "L2|µH|tekercs"
 
 #: module_05.message07
 msgid "Calculation error, please check values!"
@@ -946,6 +946,10 @@ msgstr "Számított értékek"
 msgid "Initial values"
 msgstr "Kiindulási értékek"
 
+#: tform1.label4.caption
+msgid "Parameters"
+msgstr "Paraméterek"
+
 #: TFORM1.MENUITEM1.CAPTION
 msgid "&File"
 msgstr "&Fájl"
@@ -955,82 +959,126 @@ msgid "&Configuration"
 msgstr "&Konfiguráció"
 
 #: TFORM1.MENUITEM12.CAPTION
-msgid "Se&ttings.."
+msgid "Se&ttings..."
 msgstr "&Beállítások"
 
 #: TFORM1.MENUITEM14.CAPTION
-msgid "&Save to file.."
+msgid "Save &report to file..."
 msgstr "&Mentés fájlba"
 
 #: TFORM1.MENUITEM15.CAPTION
 msgid "Search &new version"
 msgstr "Ú&j verzió keresés"
 
-#: TFORM1.MENUITEM16.CAPTION
-msgid "&Operation"
-msgstr "Műkö&dés"
-
-#: TFORM1.MENUITEM17.CAPTION
-msgid "Reset &initial values"
-msgstr "Kiindulási a&datok törlése"
-
-#: TFORM1.MENUITEM18.CAPTION
-msgid "&Calculate!"
-msgstr "&Számolj!"
-
 #: TFORM1.MENUITEM19.CAPTION
 msgid "Save settin&gs"
 msgstr "Beállítások menté&se"
 
 #: TFORM1.MENUITEM2.CAPTION
-msgid "&Index"
-msgstr "&Tartalom mutató"
+msgid "&Content"
+msgstr "&Tartalom"
+
+#: tform1.menuitem27.caption
+msgid "&Load initial values..."
+msgstr "Kiindulási adatok &betöltése..."
+
+#: tform1.menuitem29.caption
+msgid "&Print report..."
+msgstr "&Nyomtatás"
+
+#: tform1.menuitem31.caption
+msgid "Load re&cent"
+msgstr "&Előző fájlok"
+
+#: tform1.menuitem33.caption
+msgid "On-line &bugreport"
+msgstr "On-line hi&bajelentés"
+
+#: tform1.menuitem35.caption
+msgid "&Homepage"
+msgstr "&Honlap"
+
+#: TFORM1.MENUITEM39.CAPTION
+msgid "&Operation"
+msgstr "Műkö&dés"
+
+#: TFORM1.MENUITEM40.CAPTION
+msgid "&Reset data"
+msgstr "Kiindulási a&datok törlése"
+
+#: TFORM1.MENUITEM41.CAPTION
+msgid "Calculate!"
+msgstr "Számolj!"
 
 #: TFORM1.MENUITEM5.CAPTION
 msgid "&Help"
 msgstr "&Súgó"
 
 #: TFORM1.MENUITEM6.CAPTION
-msgid "&About.."
-msgstr "&Névjegy"
+msgid "&About..."
+msgstr "&Névjegy..."
 
 #: TFORM1.MENUITEM7.CAPTION
-msgid "On-line &bugreport"
-msgstr "On-line hi&bajelentés"
+msgid "&Save initial values..."
+msgstr "Kiindulási adatok &mentése..."
 
 #: TFORM1.MENUITEM9.CAPTION
 msgid "&Quit"
 msgstr "&Kilépés"
 
-#: TFORM1.STRINGGRID1.COLUMNS[0].TGRIDCOLUMNTITLE.CAPTION
+#: TFORM1.STRINGGRID1.COLUMNS[0].TITLE.CAPTION
 msgid "Name [unit]"
 msgstr "Név [egység]"
 
-#: TFORM1.STRINGGRID1.COLUMNS[1].TGRIDCOLUMNTITLE.CAPTION
+#: TFORM1.STRINGGRID1.COLUMNS[1].TITLE.CAPTION
 msgid "Value"
 msgstr "Érték"
 
-#: TFORM1.STRINGGRID1.COLUMNS[2].TGRIDCOLUMNTITLE.CAPTION
+#: TFORM1.STRINGGRID1.COLUMNS[2].TITLE.CAPTION
 msgid "Description"
 msgstr "Leírás"
 
-#: TFORM1.STRINGGRID2.COLUMNS[0].TGRIDCOLUMNTITLE.CAPTION
+#: TFORM1.STRINGGRID2.COLUMNS[0].TITLE.CAPTION
 msgid "Name [unit]"
 msgstr "Név [egység]"
 
-#: TFORM1.STRINGGRID2.COLUMNS[1].TGRIDCOLUMNTITLE.CAPTION
+#: TFORM1.STRINGGRID2.COLUMNS[1].TITLE.CAPTION
 msgid "Value"
 msgstr "Érték"
 
-#: TFORM1.STRINGGRID2.COLUMNS[2].TGRIDCOLUMNTITLE.CAPTION
+#: TFORM1.STRINGGRID2.COLUMNS[2].TITLE.CAPTION
 msgid "Description"
 msgstr "Leírás"
+
+#: TFORM1.STRINGGRID3.COLUMNS[0].TITLE.CAPTION
+msgid "Pos."
+msgstr "Poz."
+
+#: TFORM1.STRINGGRID3.COLUMNS[1].TITLE.CAPTION
+msgid "Name [unit]"
+msgstr "Név [egység]"
+
+#: TFORM1.STRINGGRID3.COLUMNS[2].TITLE.CAPTION
+msgid "Value"
+msgstr "Érték"
+
+#: TFORM1.STRINGGRID3.COLUMNS[3].TITLE.CAPTION
+msgid "Description"
+msgstr "Leírás"
+
+#: tform1.tabsheet1.caption
+msgid "General data"
+msgstr "Általános adatok"
+
+#: tform1.tabsheet2.caption
+msgid "Parameters of active elements"
+msgstr "Aktív elemek adatai"
 
 #: TFORM2.BUTTON1.CAPTION
 msgid "Close"
 msgstr "Bezárás"
 
-#: TFORM2.FORM2.CAPTION
+#: TFORM2.CAPTION
 msgid "About"
 msgstr "Névjegy"
 
@@ -1066,13 +1114,17 @@ msgstr "&Mégsem"
 msgid "&Default"
 msgstr "&Alap"
 
+#: tform4.caption
+msgid "Preferences"
+msgstr "Beállítások"
+
 #: TFORM4.CHECKBOX1.CAPTION
 msgid "Offline mode"
 msgstr "Off-line mód"
 
-#: TFORM4.FORM4.CAPTION
-msgid "Preferences"
-msgstr "Beállítások"
+#: tform4.checkbox2.caption
+msgid "Save history"
+msgstr "Előzmények mentése"
 
 #: TFORM4.LABEL1.CAPTION
 msgid "Browser application:"

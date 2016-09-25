@@ -830,7 +830,7 @@ begin
   else runbrowser(untcommonproc.HOMEPAGE+'/cheapapps/bugreport_en.php');
 end;
 
-// Internet/Pozsi's homepage
+// Internet/Pozsi''s homepage
 procedure TForm1.MenuItem35Click(Sender: TObject);
 begin
   if untcommonproc.lang='hu'
